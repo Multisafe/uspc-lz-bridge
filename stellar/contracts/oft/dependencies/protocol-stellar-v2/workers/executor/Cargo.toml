@@ -1,0 +1,60 @@
+[package]
+name = "executor"
+publish = false
+
+[package.version]
+workspace = true
+
+[package.edition]
+workspace = true
+
+[lib]
+crate-type = [ "cdylib", "rlib" ]
+doctest = false
+
+[features]
+library = []
+testutils = [ "soroban-sdk/testutils" ]
+
+[dependencies.cfg-if]
+workspace = true
+
+[dependencies.soroban-sdk]
+workspace = true
+
+[dependencies.utils]
+workspace = true
+
+[dependencies.worker]
+workspace = true
+
+[dependencies.fee-lib-interfaces]
+workspace = true
+
+[dependencies.common-macros]
+workspace = true
+
+[dependencies.message-lib-common]
+workspace = true
+
+[dependencies.endpoint-v2]
+workspace = true
+features = [ "library" ]
+
+[dev-dependencies.executor]
+path = ""
+features = [ "testutils" ]
+
+[dev-dependencies.soroban-sdk]
+workspace = true
+features = [ "testutils" ]
+
+[dev-dependencies.rand]
+workspace = true
+
+[dev-dependencies.ed25519-dalek]
+workspace = true
+
+[dev-dependencies.utils]
+workspace = true
+features = [ "testutils" ]

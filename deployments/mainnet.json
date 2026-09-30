@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "network": "mainnet",
+  "description": "USPC LayerZero bridge deployment identities, deployment transactions and runtime hashes.",
+  "supportedRoutes": [
+    ["ethereum", "stellar"],
+    ["stellar", "ethereum"],
+    ["ethereum", "monad"],
+    ["monad", "ethereum"]
+  ],
+  "routeNotes": "Transfers between Stellar and Monad route through Ethereum using two separate transfers.",
+  "units": {
+    "ethereumLocalDecimals": 6,
+    "monadLocalDecimals": 6,
+    "stellarLocalDecimals": 7,
+    "sharedDecimals": 6
+  },
+  "networks": {
+    "ethereum": {
+      "chainId": 1,
+      "eid": 30101,
+      "mode": "lock-unlock",
+      "explorer": "https://etherscan.io",
+      "addresses": {
+        "token": "0xbF4e3fbE8B60062A00C7a6B1D97d0d49c2971A19",
+        "adapter": "0xf3e6fae17564a95344295c428e13eaaead17e474",
+        "implementation": "0x66c236f6903ebd1133316b62890fe9afd70df2d5",
+        "proxyAdmin": "0x848902F278fDF1750496fb892E73c2d39943e6BB",
+        "endpoint": "0x1a44076050125825900e736c501f859c50fe728c"
+      },
+      "artifacts": {
+        "adapter": "evm/artifacts/ethereum/OFTLockUnlockExtendedRBACUpgradeable.json",
+        "proxy": "evm/artifacts/ethereum/TransparentUpgradeableProxy.json",
+        "proxyAdmin": "evm/artifacts/ethereum/ProxyAdmin.json"
+      },
+      "remoteEids": [30600, 30390],
+      "tokenSourceScope": "The existing canonical Ethereum USPC token is an external dependency; its implementation source is not part of this bridge export.",
+      "runtimeCodeHashes": {
+        "token": "0xa96934256386b12be3fc9009fd9f73b621a19b319c47468db90771bc7393f5bb",
+        "adapter": "0xb2c6c74b54a565f3677b69f9febad7443b984592edce97865c894cc2454186d8",
+        "implementation": "0x5a780536bea85607be248a5777133539d38104c8c2195574826651076b029c43",
+        "proxyAdmin": "0x856f55b7a3b2eee8ef7d57ac53499b29441a42db363a715f5fea44a94aab4810"
+      },
+      "deploymentTransactions": {
+        "implementation": "0x52afe7fe31809d58f1de2aa874f91f221bfa8b5c50a0ea9753b5611a3faef571",
+        "adapter": "0xb364ff1d24abe46000e3bcfee9e358722e0252007a484e5ca64e7dd97293ebea"
+      }
+    },
+    "monad": {
+      "chainId": 143,
+      "eid": 30390,
+      "mode": "burn-mint",
+      "explorer": "https://monadscan.com",
+      "addresses": {
+        "token": "0xdAFA800e2C60830cB8D2bd3C022C073e6EC8876E",
+        "adapter": "0xf3E6FAE17564a95344295c428E13EaAEaD17E474",
+        "implementation": "0x66c236F6903EBd1133316b62890Fe9aFD70dF2d5",
+        "proxyAdmin": "0x848902F278fDF1750496fb892E73c2d39943e6BB",
+        "endpoint": "0x6f475642a6e85809b1c36fa62763669b1b48dd5b"
+      },
+      "artifacts": {
+        "adapter": "evm/artifacts/monad/OFTBurnMintExtendedRBACUpgradeable.json",
+        "proxy": "evm/artifacts/monad/TransparentUpgradeableProxy.json",
+        "proxyAdmin": "evm/artifacts/monad/ProxyAdmin.json",
+        "token": "evm/artifacts/monad/USPCMonad.json"
+      },
+      "remoteEids": [30101],
+      "runtimeCodeHashes": {
+        "token": "0xc0040a03c2a74e47a21a5dbb3f893840b588d32eb916f124409ec62df8501327",
+        "adapter": "0xb2c6c74b54a565f3677b69f9febad7443b984592edce97865c894cc2454186d8",
+        "implementation": "0x94a10b6c079509a8521807ccaae61a386dfde114d878fc711dbefc5add0d4c07",
+        "proxyAdmin": "0x856f55b7a3b2eee8ef7d57ac53499b29441a42db363a715f5fea44a94aab4810"
+      },
+      "deploymentTransactions": {
+        "token": "0xf1d960d773eb66f9955654f8106af98531dae0f2209f1893d1b6fe19f62581ca",
+        "implementation": "0x130f7a732430851552f208c95dfabfa3bad33e74e7497112323604db18466ffb",
+        "adapter": "0x4ce0997f1f94f5d4796ab95732b20e915b2fdb5e42d6035861bc93f8cf73ba1c"
+      }
+    },
+    "stellar": {
+      "eid": 30600,
+      "mode": "burn-mint-via-stellar-asset-contract",
+      "networkPassphrase": "Public Global Stellar Network ; September 2015",
+      "explorer": "https://stellar.expert/explorer/public",
+      "addresses": {
+        "oft": "CCATTAMTXDP6ZCB3RJRCF536H5XKDRQ4T4R4QAWZNWMZ6ZL4A6S42AOV",
+        "sacManager": "CAJPMDOLAKXKQEPNG4XRBSLF7QRQ7I3XIBF24EFLZPXWZEO5QRZCIHWV",
+        "sac": "CCIMELDVXPSNVYLMZB3YA7X52IIETA63PLHBVQJGQW3WSGEKHUC3EAPC",
+        "issuer": "GARSY67GO23LDNMWLB5CWW7E6AGHGPU5TCDZF4EYO5UMBV4V4R5FRBO2",
+        "endpoint": "CCQLLRE5JBAWYCW3KTWOIWLMFDUOKROQVZNSALQMGOSXNW3ERUOWTZGK",
+        "sendLibrary": "CCV4HEII3UC65THWGSRM2DVIJLB6HS6YMUHDTTHUECX2RHTP5FA2GOBA",
+        "receiveLibrary": "CCV4HEII3UC65THWGSRM2DVIJLB6HS6YMUHDTTHUECX2RHTP5FA2GOBA"
+      },
+      "assetCode": "USPC",
+      "remoteEids": [30101],
+      "artifacts": {
+        "oft": "stellar/artifacts/oft.wasm",
+        "sacManager": "stellar/artifacts/sac_manager.wasm"
+      },
+      "wasmSha256": {
+        "oft": "9410ac84392abff5c805df7636e4988a8f40b4f2e403f8f97a7116d3ff0c70f6",
+        "sacManager": "4b6e32489d58e0d54cd83c1c1123c714a69a271a6674e1522ab346e28d0c10aa"
+      },
+      "deploymentTransactions": {
+        "sac": "80d5abf32011815f34178cc18d0714251fdc20b1cd05cde5fe6a89574bf358e8",
+        "sacManager": "fd0822d764efeb646cf4d9fe96eb4c716635d41471911039553fcc2a9e81cdc4",
+        "oft": "c18eea4ea5e5298455d674c8bbd7d74d393ef0ee412566df975247f013a7a0b3"
+      }
+    }
+  }
+}

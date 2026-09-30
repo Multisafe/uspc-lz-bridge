@@ -1,0 +1,370 @@
+{
+  "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol": {
+    "sha256": "a88fb702b371527c3791d7e5c168c1157d39021ed29b51e627e02973e6a740e0",
+    "license": "MIT"
+  },
+  "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol": {
+    "sha256": "24e4add7dd95a72dad23e26c4fadfc1b6ce63148e0c7f4d6ad5dfaeda79db3e7",
+    "license": "MIT"
+  },
+  "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol": {
+    "sha256": "ffc33e319ab5e9d1392d16f8716625bcfb1dc34b744551f87dad1c0eb3ad11f1",
+    "license": "MIT"
+  },
+  "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol": {
+    "sha256": "9d0100f7cede83d5a4f6c9e03d6bfd24f861e9331b298ca4c73f99b161c718d5",
+    "license": "MIT"
+  },
+  "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol": {
+    "sha256": "5e7e5a47a477dcf05c034d5135bf6516119af881ea78d586805eee0ad5ab6b12",
+    "license": "MIT"
+  },
+  "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol": {
+    "sha256": "b7f081828b8d0d206833953ebd73101bb28ac62541e7e8365fddc38eb440a92a",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-evm-contracts/contracts/interfaces/IOAppCore.sol": {
+    "sha256": "2525ea2ca7a85855262ee21a1b74cca67500e3936f64698d6584ae59930764ed",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-evm-contracts/contracts/interfaces/IOAppExtended.sol": {
+    "sha256": "a4e39d1b645c0ae81987bf5d1fd5b7624318bbe291f23b28f511f1b91476d454",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-evm-contracts/contracts/interfaces/IOAppMessagingChannel.sol": {
+    "sha256": "4e4c97b12a33cf0fd48345687d1f8beee2c705cc2412f357c2dd278bf75348f5",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-evm-contracts/contracts/interfaces/IOAppMsgInspection.sol": {
+    "sha256": "80ca8cda21b434d37c40bf6362c634958ce4632ee5b277314e34f13d6b321b46",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-evm-contracts/contracts/interfaces/IOAppMsgInspector.sol": {
+    "sha256": "f3eeb60ba0a7236c40240b0772e41a3e0b6a21fe10b73080e71178550ef3285b",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-evm-contracts/contracts/interfaces/IOAppOptionsType3.sol": {
+    "sha256": "fdd0e38bc3021f032b2e262b9bdc39f872922b76615a4910938d8d07c165a6a2",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-evm-contracts/contracts/interfaces/IOAppReceiver.sol": {
+    "sha256": "c3fb6d16c5a94750c398a746e65fd9c22d3707b7f9ee0b5baf71b226b8823a57",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/messaging-channel/OAppMessagingChannelBaseUpgradeable.sol": {
+    "sha256": "5b0048c0af71c72f3203557d55471ba867eb16fc29f0219e5b55862954be8274",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/messaging-channel/OAppMessagingChannelRBACUpgradeable.sol": {
+    "sha256": "9a6e06d0969e709f75c9d6507313b61c069b29fe386cb73117d1bd71623feaa3",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/msg-inspection/OAppMsgInspectionBaseUpgradeable.sol": {
+    "sha256": "5d655fab369584e6df120fca8d7a9ab91d6a300a2014eef1c94da398f9f522ba",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/msg-inspection/OAppMsgInspectionRBACUpgradeable.sol": {
+    "sha256": "008d254c15558528261e2c94d0ea3a3a76645e6ec2acafcaf2077527bc79d131",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/OAppCoreBaseUpgradeable.sol": {
+    "sha256": "146fa7a45bdf37c0e37ff4401fb386b28a017faded7df0ecccfc0245358e0d2f",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/OAppCoreRBACUpgradeable.sol": {
+    "sha256": "62d82376195d86c1c3f4c4b5f5237de0bca65b1bed5dad4d1cecc8b47b8ee8bc",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/OAppReceiverUpgradeable.sol": {
+    "sha256": "77b6501484f1357058e5af6362d3e22dfa56b10dbab2bd78f991fa2ba004f298",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/OAppSenderUpgradeable.sol": {
+    "sha256": "21641ba8c25cd5b47ade969952f0aaf743880bde113a392e077bdd0f3fc5c246",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/OAppUpgradeable.sol": {
+    "sha256": "6bebb6a7b2fa021f358c2c0af810251ced212fd169ca73f936f4d328a259bd97",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/options-type-3/OAppOptionsType3BaseUpgradeable.sol": {
+    "sha256": "db3313606361c081a6f17d52b7f41ffc319c6a282ce5018655cea71f92635aa6",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oapp-upgradeable-evm-contracts/contracts/oapp/options-type-3/OAppOptionsType3RBACUpgradeable.sol": {
+    "sha256": "220e58c883921f29de97d7c327d76287c11b368829cfa989b812d04276f53ace",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-evm-contracts/contracts/interfaces/IOFT.sol": {
+    "sha256": "5b602aa9d3ffb008705eee175949b94f41f209e5b2b6fe93d0e9aaf561e42d51",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-evm-contracts/contracts/interfaces/IOFTExtended.sol": {
+    "sha256": "fc8c5d904027f23e4a086dfc01cc28bfdfd3974d73a77c681e7945f67a466467",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-evm-contracts/contracts/libs/OFTComposeMsgCodec.sol": {
+    "sha256": "ffe2cbf2b2e9267a5f1f606e2fee308e630c52f6b752b27dba43799b1e69be4f",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-evm-contracts/contracts/libs/OFTMsgCodec.sol": {
+    "sha256": "09f50fb6505a839265ad6e7af61fc921eddeb33ccd67cb92d45d67544ca4a4bf",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-upgradeable-evm-contracts/contracts/extended/OFTBurnMintExtendedRBACUpgradeable.sol": {
+    "sha256": "bb1c990e39d26bf2aad41b9dc323201d7107fbf08a6f1e5f81488f0b7f0a1e4a",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-upgradeable-evm-contracts/contracts/extended/OFTCoreExtendedRBACUpgradeable.sol": {
+    "sha256": "7ff5b7cccd3ef04124c3a9b8dc18d136eb81c4969617603e670bc9b95d1084b4",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-upgradeable-evm-contracts/contracts/extended/OFTLockUnlockExtendedRBACUpgradeable.sol": {
+    "sha256": "8d1467408a82372e1cf3954df81d8e3b814221f65a0004229d321b34181bffe2",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-upgradeable-evm-contracts/contracts/oft/OFTCoreBaseUpgradeable.sol": {
+    "sha256": "948cad610eb4bc6d689dd9bed86af9259679510842d3e37cc937669ea100c421",
+    "license": "MIT"
+  },
+  "@layerzerolabs/oft-upgradeable-evm-contracts/contracts/oft/OFTCoreRBACUpgradeable.sol": {
+    "sha256": "357a2d24fc6b4df03ec1b79f4fc8eb77d79fa9475378d4b2c8536da796475b95",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-evm-contracts/contracts/interfaces/IAccessControl2Step.sol": {
+    "sha256": "9f342556be98b5414674a842557a6d1c8800514d36fa522bbc8ad03a8bd43f8d",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-evm-contracts/contracts/interfaces/ICreditRedirect.sol": {
+    "sha256": "a7565f998baf7d20b8844b29beaa169e5e650088c7bb357ab9fcb865d7405e36",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-evm-contracts/contracts/interfaces/ICreditRedirectAllowlist.sol": {
+    "sha256": "0161c7fac478dfe8b0b4e64e79185ba4d1da3596bdd725b251a846e1f56c6f12",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-evm-contracts/contracts/interfaces/IFeeConfig.sol": {
+    "sha256": "1de70b06b0e49c9786e7b9cd76bb937c853a0b0c943c9f6ad92012f8fe85da10",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-evm-contracts/contracts/interfaces/IFeeHandler.sol": {
+    "sha256": "fa3a772f82a18bc5a3fc83ac8b6898c1bcff4ef949870fe47c1ee198aa03d39d",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-evm-contracts/contracts/interfaces/IPauseByID.sol": {
+    "sha256": "9e61308f93cfbe377dfcfc9bb609409c01c6207aec7add8dd67f0eac9e7d83f7",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-evm-contracts/contracts/interfaces/IRateLimiter.sol": {
+    "sha256": "33b92d7ef99451f91138b0cacbfaecb81062856b6a194ef9791915b01e9267e2",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/access/AccessControl2StepUpgradeable.sol": {
+    "sha256": "af7fbf21df452e2d6de08ed8be29e8eae35cea2d6d5ff1c26f64ddb8d73f4e09",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/credit-redirect/CreditRedirectBaseUpgradeable.sol": {
+    "sha256": "425fb6faf5cf53de86c06e30f15a17815fb1fbda26f1688e73408fff198562b9",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/credit-redirect/CreditRedirectRBACUpgradeable.sol": {
+    "sha256": "bcf23d292588e3114095f37ef87197146815e74bf73fea09e5ebae8c40d97a96",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/fee-accounting/FeeHandlerBaseUpgradeable.sol": {
+    "sha256": "09db06a24c34f2815dd6c9564b3ca0ebd19c45241e6eed8f4af8f5dbf74f5aee",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/fee-accounting/FeeHandlerRBACUpgradeable.sol": {
+    "sha256": "e857d6e1a5b2e54d4cbff88f9aaea107b002da0b9835bf0e67f8ff37c01e3a76",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/fee-config/FeeConfigBaseUpgradeable.sol": {
+    "sha256": "7c0ebee9bcbd9f731be1d1f907734451e3b5d4df5832fda90a9856cc5c08ffef",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/fee-config/FeeConfigRBACUpgradeable.sol": {
+    "sha256": "163ad53deb7d2f233d41d94de584ec8cd7d188b13f2463fb7ae663d753435961",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/pause-by-id/PauseByIDBaseUpgradeable.sol": {
+    "sha256": "82812bf81be99a48e8a663413d42552d5d9865196cd25d26ba4820eb916000df",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/pause-by-id/PauseByIDRBACUpgradeable.sol": {
+    "sha256": "a46d17b6ea207a503781e0abe3c5bf3d86c2b772c66a8e990735425b1bfae130",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/rate-limiter/libs/RateLimiterUtils.sol": {
+    "sha256": "c5b1b56d71d4ecf2310e06837a50c223a5c1a73c92f098872086b7e8f07bd930",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/rate-limiter/RateLimiterBaseUpgradeable.sol": {
+    "sha256": "f533de8a7d92104809077ac6cd90f395dede6e967873896b786fb5d05f1b6e88",
+    "license": "MIT"
+  },
+  "@layerzerolabs/utils-upgradeable-evm-contracts/contracts/rate-limiter/RateLimiterRBACUpgradeable.sol": {
+    "sha256": "1454b5d2bf269771ea62cecd24170f31513e0dc9bd3a6cec69ab951e8e995a19",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol": {
+    "sha256": "a5dee9f239e3334a7e3149dc9e72e2b0e7421813fb94660695b855384da6191e",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts-upgradeable/access/extensions/AccessControlEnumerableUpgradeable.sol": {
+    "sha256": "758b88da96877250c4e3e3613492a78b489cc56e070817fce78abe0ce2939894",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": {
+    "sha256": "f527a063813c2bf60c153fb08e38539578935402894fcc36fac42324ca325d3b",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+    "sha256": "a08e16324da33a9d666dc07a22ae58031c242a3869f6808e55b4b82fc70cb209",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts-upgradeable/utils/introspection/ERC165Upgradeable.sol": {
+    "sha256": "d2105a1e3ba533399fb408105267329c2c134fcb18043a9c024d1b6e81982fc9",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/access/AccessControl.sol": {
+    "sha256": "93c8ebfe7b36ef4d180f1660a5a741125691957726209720af476fdd5c7bac43",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/access/extensions/IAccessControlEnumerable.sol": {
+    "sha256": "e0f69ae5acc588f27b8eba7f5a625f01409be5bb4a08e825774ccee32efc0ff9",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/access/IAccessControl.sol": {
+    "sha256": "140304b7e99d517c57a13f391dfd3b550ca633a507f7b2af130f391b6cd89cc5",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/access/Ownable.sol": {
+    "sha256": "38578bd71c0a909840e67202db527cc6b4e6b437e0f39f0c909da32c1e30cb81",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+    "sha256": "df936240c9a5d342582cbda70dd773b1c1d0e0dda3042b1c17b902ef0c36827b",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/interfaces/IERC1363.sol": {
+    "sha256": "9c3a75a925a6dac9e88b03cddc58d42fe3131b0aaaad84408521f3f7af2f991b",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/interfaces/IERC165.sol": {
+    "sha256": "dfb3f56fa928a7c6cae41a7ce2c86b9210fa18d33fa26389099d66a0fa790368",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/interfaces/IERC1967.sol": {
+    "sha256": "c4e901318ab6d4963582c62c62ce988a34c68dbae71846b67decacde79e9a317",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/interfaces/IERC20.sol": {
+    "sha256": "0158e2d3e0e28bedd99eec13dcf1a8aa3a70a5b7e4bb2ad709609c95fcc740d1",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/proxy/beacon/IBeacon.sol": {
+    "sha256": "c1c9726bbb0ec4c540c7c98059dcded69a8586b46c168036672381033ee76239",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol": {
+    "sha256": "a06fe97082355529c1da9076ea6c4518875ca9fdb1a4fa1e194c35cff21b29a1",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils.sol": {
+    "sha256": "58c5b19893bf3d7f9e1aa0edc5b908b915eb7af4381800deb425a6e5331f4432",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/proxy/Proxy.sol": {
+    "sha256": "5f5081378d4bc82b814b0d64990b7f7b9c69697593b73a3341f4a269940ba540",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol": {
+    "sha256": "4da9a90b1c8b45fdab7d73d8cf81f51cf7d990657ee4e3f943492c3bf0e4c2f1",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol": {
+    "sha256": "8391555685fb89d92ad37327d21e098b242058c10ded6398447b4eeb1c908ab0",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+    "sha256": "9f906af4cba6e7e091dc12d45e6687e1239cf82d17678198424250fd64ab96bd",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+    "sha256": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+    "sha256": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+    "sha256": "ac1fd9fa99b194a8db8dfa9ae8e3ff44feaa8f16668241fd2b66ae8b47d7c082",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/Address.sol": {
+    "sha256": "f1a9255dbc40cf9ae7c786abed3b022691a9d24bca0c7f05dc60e63421d405ab",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/Arrays.sol": {
+    "sha256": "8320f75b46c18204dd6f2b3654058129625b849a95c3a55a44ae531f77f0eca9",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/Comparators.sol": {
+    "sha256": "52fb1c8f57967d42a3214bde4a8a414ab25c2e3a844d00e171ca56487024e009",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/Context.sol": {
+    "sha256": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/Errors.sol": {
+    "sha256": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+    "sha256": "61a2b12c96857aaa35f48aeda67a4281637a42494c0b3795be0ae976aa7b3793",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+    "sha256": "9055c2994b37dea1a41b7b7926dcb510f05dbe2540b0aafc5fbee9558fffd0ca",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/math/Math.sol": {
+    "sha256": "92fee281fd46a1b058b190cf21d6b1a528f0433a907850ae1c9bcf36c5c0cd98",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/math/SafeCast.sol": {
+    "sha256": "9769274bf53f26a7c7896c526ea1980dc9bea5bf5c2a5fd04870008c4afc1de9",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/Panic.sol": {
+    "sha256": "270fc8401c1a13fae6a7a4a2dd6e381b95d658896701e51f0d3e2688acab3dec",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/SlotDerivation.sol": {
+    "sha256": "daddbbeb265c87b7172548d58baede96b167cd89c6c7884ff2705676fab69438",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/StorageSlot.sol": {
+    "sha256": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+    "license": "MIT"
+  },
+  "@openzeppelin/contracts/utils/structs/EnumerableSet.sol": {
+    "sha256": "53507e71995d0e76d29d6dd897d0bcc3f069fd81f03cb431d7342bdfcc0d5345",
+    "license": "MIT"
+  },
+  "contracts/CompileImports.sol": {
+    "sha256": "31e1fda6d8aea0320c00983ba879b3c047c3fa20bca9d3fe6465db3158f7074a",
+    "license": "MIT"
+  },
+  "contracts/CompileMonad.sol": {
+    "sha256": "40b75019093e8113888f31e98163f8b4368fbd7bfe21f6eb20691e8e43ab7a09",
+    "license": "MIT"
+  },
+  "contracts/USPCMonad.sol": {
+    "sha256": "6a22af335acb619293fe532ca017a4035bba76ac837ff679ae118d35ee8ee581",
+    "license": "MIT"
+  }
+}

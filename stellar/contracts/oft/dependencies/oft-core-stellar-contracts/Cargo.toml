@@ -1,0 +1,49 @@
+[package]
+name = "oft-core"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = [ "rlib" ]
+doctest = false
+
+[dependencies.soroban-sdk]
+version = "25.1.1"
+features = [ "hazmat-address", "hazmat-crypto" ]
+
+[dependencies.endpoint-v2]
+path = "../protocol-stellar-v2/endpoint-v2"
+default-features = false
+features = [ "library" ]
+
+[dependencies.utils]
+path = "../common-utils-stellar-contracts"
+
+[dependencies.common-macros]
+path = "../common-utils-macros-stellar-contracts"
+
+[dependencies.oapp]
+path = "../oapp-stellar-contracts"
+
+[dev-dependencies.soroban-sdk]
+version = "25.1.1"
+features = [ "hazmat-address", "hazmat-crypto", "testutils" ]
+
+[dev-dependencies.simple-message-lib]
+path = "../protocol-stellar-v2/message-libs/simple-message-lib"
+
+[dev-dependencies.message-lib-common]
+path = "../protocol-stellar-v2/message-libs/message-lib-common"
+features = [ "testutils" ]
+
+[dev-dependencies.endpoint-v2]
+path = "../protocol-stellar-v2/endpoint-v2"
+features = [ "testutils" ]
+
+[dev-dependencies.utils]
+path = "../common-utils-stellar-contracts"
+features = [ "testutils" ]
+
+[dev-dependencies.oapp-macros]
+path = "../oapp-macros-stellar-contracts"

@@ -1,0 +1,62 @@
+{
+  "compiler": "0.8.26+commit.8a97fa7a.Emscripten.clang",
+  "inputs": {
+    "ethereum": {
+      "origin": "Reconstructed from original CompileImports.sol and pinned dependency sources; all original metadata hashes validated; complete artifacts reproduced exactly"
+    },
+    "monad": {
+      "origin": "Byte-for-byte copy of original artifacts/monad/standard-json.json"
+    }
+  },
+  "references": [
+    {
+      "chain": "ethereum",
+      "contractName": "OFTLockUnlockExtendedRBACUpgradeable",
+      "sourceName": "@layerzerolabs/oft-upgradeable-evm-contracts/contracts/extended/OFTLockUnlockExtendedRBACUpgradeable.sol",
+      "referenceOrigin": "original deployment build artifact",
+      "artifactFileSha256": "30679c34a0e8f3d3b2a40862944b2e72bda1a3a03d91435db4594d46a9135bd7"
+    },
+    {
+      "chain": "ethereum",
+      "contractName": "TransparentUpgradeableProxy",
+      "sourceName": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "referenceOrigin": "original deployment build artifact",
+      "artifactFileSha256": "200709862fa0ade01109106e170734e662dc2370de55aa4ac8d9dbf65d2cfa5b"
+    },
+    {
+      "chain": "ethereum",
+      "contractName": "ProxyAdmin",
+      "sourceName": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+      "referenceOrigin": "reproduced from the exact source/compiler settings; ProxyAdmin was created by TransparentUpgradeableProxy",
+      "artifactFileSha256": "613d611eafd096ed97fa4223b6b1afed3efa98957c6710a4a09888a3b2008043"
+    },
+    {
+      "chain": "monad",
+      "contractName": "USPCMonad",
+      "sourceName": "contracts/USPCMonad.sol",
+      "referenceOrigin": "original deployment build artifact",
+      "artifactFileSha256": "5b032bc8cb78439e8827f5572a025e8f6ea05263a056eba2751cb240dd127657"
+    },
+    {
+      "chain": "monad",
+      "contractName": "OFTBurnMintExtendedRBACUpgradeable",
+      "sourceName": "@layerzerolabs/oft-upgradeable-evm-contracts/contracts/extended/OFTBurnMintExtendedRBACUpgradeable.sol",
+      "referenceOrigin": "original deployment build artifact",
+      "artifactFileSha256": "851c2ebeb5959a445fe8d41df8ca81c9151f9c292fdba5ac304abdf07e56d2b2"
+    },
+    {
+      "chain": "monad",
+      "contractName": "TransparentUpgradeableProxy",
+      "sourceName": "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol",
+      "referenceOrigin": "original deployment build artifact",
+      "artifactFileSha256": "200709862fa0ade01109106e170734e662dc2370de55aa4ac8d9dbf65d2cfa5b"
+    },
+    {
+      "chain": "monad",
+      "contractName": "ProxyAdmin",
+      "sourceName": "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol",
+      "referenceOrigin": "reproduced from the exact source/compiler settings; ProxyAdmin was created by TransparentUpgradeableProxy",
+      "artifactFileSha256": "0cb533682e487db059b597dc66d44e9634a53f2f92fa5213094c674a038762c5"
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "ethereum": {
+    "OFTLockUnlockExtendedRBACUpgradeable": {
+      "immutableReferences": {
+        "1029": [
+          {
+            "length": 32,
+            "start": 2475
+          },
+          {
+            "length": 32,
+            "start": 3930
+          },
+          {
+            "length": 32,
+            "start": 5393
+          },
+          {
+            "length": 32,
+            "start": 7360
+          },
+          {
+            "length": 32,
+            "start": 7905
+          },
+          {
+            "length": 32,
+            "start": 10695
+          },
+          {
+            "length": 32,
+            "start": 10995
+          },
+          {
+            "length": 32,
+            "start": 15454
+          },
+          {
+            "length": 32,
+            "start": 17034
+          },
+          {
+            "length": 32,
+            "start": 20636
+          },
+          {
+            "length": 32,
+            "start": 21361
+          },
+          {
+            "length": 32,
+            "start": 21533
+          }
+        ],
+        "2926": [
+          {
+            "length": 32,
+            "start": 9436
+          },
+          {
+            "length": 32,
+            "start": 11222
+          },
+          {
+            "length": 32,
+            "start": 19188
+          }
+        ],
+        "2929": [
+          {
+            "length": 32,
+            "start": 7584
+          }
+        ],
+        "3445": [
+          {
+            "length": 32,
+            "start": 7251
+          },
+          {
+            "length": 32,
+            "start": 15017
+          },
+          {
+            "length": 32,
+            "start": 19098
+          },
+          {
+            "length": 32,
+            "start": 19651
+          }
+        ],
+        "5916": [
+          {
+            "length": 32,
+            "start": 8636
+          },
+          {
+            "length": 32,
+            "start": 11466
+          },
+          {
+            "length": 32,
+            "start": 21737
+          },
+          {
+            "length": 32,
+            "start": 22196
+          }
+        ],
+        "5919": [
+          {
+            "length": 32,
+            "start": 11585
+          },
+          {
+            "length": 32,
+            "start": 21988
+          },
+          {
+            "length": 32,
+            "start": 22374
+          }
+        ]
+      },
+      "bytecodeLinkReferences": {},
+      "deployedBytecodeLinkReferences": {},
+      "creationBytecodeBytes": 24428,
+      "deployedBytecodeBytes": 23558
+    },
+    "TransparentUpgradeableProxy": {
+      "immutableReferences": {
+        "9056": [
+          {
+            "length": 32,
+            "start": 7
+          }
+        ]
+      },
+      "bytecodeLinkReferences": {},
+      "deployedBytecodeLinkReferences": {},
+      "creationBytecodeBytes": 2857,
+      "deployedBytecodeBytes": 813
+    },
+    "ProxyAdmin": {
+      "immutableReferences": {},
+      "bytecodeLinkReferences": {},
+      "deployedBytecodeLinkReferences": {},
+      "creationBytecodeBytes": 1171,
+      "deployedBytecodeBytes": 955
+    }
+  },
+  "monad": {
+    "USPCMonad": {
+      "immutableReferences": {},
+      "bytecodeLinkReferences": {},
+      "deployedBytecodeLinkReferences": {},
+      "creationBytecodeBytes": 4138,
+      "deployedBytecodeBytes": 3062
+    },
+    "OFTBurnMintExtendedRBACUpgradeable": {
+      "immutableReferences": {
+        "1029": [
+          {
+            "length": 32,
+            "start": 2560
+          },
+          {
+            "length": 32,
+            "start": 4015
+          },
+          {
+            "length": 32,
+            "start": 5478
+          },
+          {
+            "length": 32,
+            "start": 7445
+          },
+          {
+            "length": 32,
+            "start": 7990
+          },
+          {
+            "length": 32,
+            "start": 10818
+          },
+          {
+            "length": 32,
+            "start": 11118
+          },
+          {
+            "length": 32,
+            "start": 15589
+          },
+          {
+            "length": 32,
+            "start": 17169
+          },
+          {
+            "length": 32,
+            "start": 20738
+          },
+          {
+            "length": 32,
+            "start": 21413
+          },
+          {
+            "length": 32,
+            "start": 21585
+          }
+        ],
+        "2897": [
+          {
+            "length": 32,
+            "start": 1400
+          },
+          {
+            "length": 32,
+            "start": 22677
+          }
+        ],
+        "2900": [
+          {
+            "length": 32,
+            "start": 9524
+          }
+        ],
+        "2903": [
+          {
+            "length": 32,
+            "start": 20958
+          }
+        ],
+        "3184": [
+          {
+            "length": 32,
+            "start": 11345
+          }
+        ],
+        "3187": [
+          {
+            "length": 32,
+            "start": 7669
+          }
+        ],
+        "3523": [
+          {
+            "length": 32,
+            "start": 7336
+          },
+          {
+            "length": 32,
+            "start": 15152
+          },
+          {
+            "length": 32,
+            "start": 19233
+          },
+          {
+            "length": 32,
+            "start": 19753
+          }
+        ],
+        "5994": [
+          {
+            "length": 32,
+            "start": 8721
+          },
+          {
+            "length": 32,
+            "start": 11589
+          },
+          {
+            "length": 32,
+            "start": 21789
+          },
+          {
+            "length": 32,
+            "start": 22248
+          }
+        ],
+        "5997": [
+          {
+            "length": 32,
+            "start": 11708
+          },
+          {
+            "length": 32,
+            "start": 22040
+          },
+          {
+            "length": 32,
+            "start": 22426
+          }
+        ]
+      },
+      "bytecodeLinkReferences": {},
+      "deployedBytecodeLinkReferences": {},
+      "creationBytecodeBytes": 24851,
+      "deployedBytecodeBytes": 23875
+    },
+    "TransparentUpgradeableProxy": {
+      "immutableReferences": {
+        "9568": [
+          {
+            "length": 32,
+            "start": 7
+          }
+        ]
+      },
+      "bytecodeLinkReferences": {},
+      "deployedBytecodeLinkReferences": {},
+      "creationBytecodeBytes": 2857,
+      "deployedBytecodeBytes": 813
+    },
+    "ProxyAdmin": {
+      "immutableReferences": {},
+      "bytecodeLinkReferences": {},
+      "deployedBytecodeLinkReferences": {},
+      "creationBytecodeBytes": 1171,
+      "deployedBytecodeBytes": 955
+    }
+  }
+}

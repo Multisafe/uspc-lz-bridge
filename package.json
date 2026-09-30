@@ -1,0 +1,21 @@
+{
+  "name": "uspc-bridge-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Exact deployed USPC bridge sources, build inputs, and contract identities for Ethereum, Stellar, and Monad.",
+  "type": "module",
+  "license": "SEE LICENSE IN LICENSE",
+  "engines": {
+    "node": ">=22.23.1 <23"
+  },
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "build": "node evm/build.mjs",
+    "check": "node evm/build.mjs && node stellar/verify.mjs && node scripts/check-release.mjs",
+    "check:stellar": "node stellar/reproduce.mjs",
+    "checksums:update": "node scripts/check-release.mjs --write"
+  },
+  "devDependencies": {
+    "solc": "0.8.26"
+  }
+}

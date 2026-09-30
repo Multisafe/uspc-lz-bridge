@@ -1,0 +1,56 @@
+[package]
+name = "uln302"
+publish = false
+
+[package.version]
+workspace = true
+
+[package.edition]
+workspace = true
+
+[lib]
+crate-type = [ "cdylib", "rlib" ]
+doctest = false
+
+[features]
+library = []
+testutils = [ "soroban-sdk/testutils" ]
+
+[dependencies.cfg-if]
+workspace = true
+
+[dependencies.soroban-sdk]
+workspace = true
+
+[dependencies.utils]
+workspace = true
+
+[dependencies.common-macros]
+workspace = true
+
+[dependencies.endpoint-v2]
+workspace = true
+features = [ "library" ]
+
+[dependencies.message-lib-common]
+workspace = true
+
+[dev-dependencies.uln302]
+path = ""
+features = [ "testutils" ]
+
+[dev-dependencies.soroban-sdk]
+workspace = true
+features = [ "testutils" ]
+
+[dev-dependencies.endpoint-v2]
+workspace = true
+features = [ "testutils" ]
+
+[dev-dependencies.message-lib-common]
+workspace = true
+features = [ "testutils" ]
+
+[dev-dependencies.utils]
+workspace = true
+features = [ "testutils" ]

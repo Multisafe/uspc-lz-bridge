@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-09-30T10:52:33.728Z",
+  "source": "Published contracts/oft and contracts/sac-manager source trees mounted read-only; source, lockfile and artifact hashes verified before and after the build.",
+  "environment": {
+    "platform": "linux/amd64",
+    "image": "stellar/stellar-cli@sha256:f2026aa61b3d7896444c642c5f29489b7620afaffbb3e17653e2634306a20c4b",
+    "rust": "1.90.0 (1159e78c4 2025-09-14)",
+    "target": "wasm32v1-none",
+    "stellarCli": {
+      "version": "25.1.0",
+      "revision": "a048a57a75762458b487052e0021ea704a926bee"
+    },
+    "buildJobs": 2,
+    "targetDirectories": "Fresh temporary directory for each project; no compiled outputs reused"
+  },
+  "dependencyResolution": "cargo fetch --locked for each project, followed by CARGO_NET_OFFLINE=true Stellar CLI builds.",
+  "command": "corepack pnpm check:stellar",
+  "recipe": "stellar/reproduce.sh",
+  "exitCode": 0,
+  "results": [
+    {
+      "artifact": "artifacts/oft.wasm",
+      "originalBytes": 78174,
+      "rebuiltBytes": 78174,
+      "originalSHA256": "9410ac84392abff5c805df7636e4988a8f40b4f2e403f8f97a7116d3ff0c70f6",
+      "rebuiltSHA256": "9410ac84392abff5c805df7636e4988a8f40b4f2e403f8f97a7116d3ff0c70f6",
+      "byteForByteMatch": true
+    },
+    {
+      "artifact": "artifacts/sac_manager.wasm",
+      "originalBytes": 21045,
+      "rebuiltBytes": 21045,
+      "originalSHA256": "4b6e32489d58e0d54cd83c1c1123c714a69a271a6674e1522ab346e28d0c10aa",
+      "rebuiltSHA256": "4b6e32489d58e0d54cd83c1c1123c714a69a271a6674e1522ab346e28d0c10aa",
+      "byteForByteMatch": true
+    }
+  ]
+}

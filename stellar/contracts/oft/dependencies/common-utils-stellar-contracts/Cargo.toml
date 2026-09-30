@@ -1,0 +1,23 @@
+[package]
+name = "utils"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = [ "rlib" ]
+doctest = false
+
+[features]
+testutils = [ "soroban-sdk/testutils" ]
+
+[dependencies.soroban-sdk]
+version = "=25.1.1"
+features = [ "hazmat-address", "hazmat-crypto" ]
+
+[dependencies.common-macros]
+path = "../common-utils-macros-stellar-contracts"
+
+[dev-dependencies.soroban-sdk]
+version = "=25.1.1"
+features = [ "hazmat-address", "hazmat-crypto", "testutils" ]

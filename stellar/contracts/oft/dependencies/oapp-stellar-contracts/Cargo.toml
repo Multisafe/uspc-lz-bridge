@@ -1,0 +1,51 @@
+[package]
+name = "oapp"
+version = "0.0.1"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = [ "rlib" ]
+doctest = false
+
+[dependencies.soroban-sdk]
+version = "25.1.1"
+features = [ "hazmat-address", "hazmat-crypto" ]
+
+[dependencies.utils]
+path = "../common-utils-stellar-contracts"
+
+[dependencies.common-macros]
+path = "../common-utils-macros-stellar-contracts"
+
+[dependencies.endpoint-v2]
+path = "../protocol-stellar-v2/endpoint-v2"
+default-features = false
+features = [ "library" ]
+
+[dependencies.oapp-macros]
+path = "../oapp-macros-stellar-contracts"
+
+[dev-dependencies]
+trybuild = "1.0.114"
+insta = "1.44.3"
+prettyplease = "0.2.37"
+
+[dev-dependencies.soroban-sdk]
+version = "25.1.1"
+features = [ "hazmat-address", "hazmat-crypto", "testutils" ]
+
+[dev-dependencies.utils]
+path = "../common-utils-stellar-contracts"
+features = [ "testutils" ]
+
+[dev-dependencies.endpoint-v2]
+path = "../protocol-stellar-v2/endpoint-v2"
+default-features = false
+features = [ "testutils" ]
+
+[dev-dependencies.common-macros]
+path = "../common-utils-macros-stellar-contracts"
+
+[dev-dependencies.oapp-macros]
+path = "../oapp-macros-stellar-contracts"
