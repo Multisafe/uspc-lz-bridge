@@ -77,33 +77,3 @@ The feed's base and quote units determine the required conversion. An iUSPC NAV 
 Stellar USPC uses the same share valuation. A Soroban lending integration needs a compatible oracle supplying the iUSPC NAV and Ethereum vault conversion, or an already-adjusted USPC price. The token bridge does not publish these values on Stellar. This release does not specify a Stellar USPC NAV oracle address or feed ID.
 
 [Chainlink's Stellar interface](https://docs.chain.link/data-feeds/stellar) uses a Soroban proxy and feed-specific `data_id`; the EVM feed addresses and `AggregatorV3Interface` above cannot be called directly from Soroban. Match the selected oracle's denomination and precision to the lending protocol, including USPC's 7 decimals and the loan asset's decimals. Validate freshness of every input, including any relayed vault conversion.
-
-### Validation and scaling
-
-The lending oracle must reject non-positive answers, missing or future timestamps, and prices older than its configured maximum age. Set that age against the feed's publication schedule, including non-business days, and define bounds and outage behavior. Reading `updatedAt` alone provides no protection.
-
-Follow the lending protocol's oracle interface and account for both collateral and loan-token precision. The Morpho scale below applies to its EVM markets, not to Soroban protocols generally.
-
-## Morpho on Monad
-
-The following contracts are listed in [Morpho's registry](https://docs.morpho.org/developers/contracts/addresses/) and [Circle's USDC registry](https://developers.circle.com/stablecoins/usdc-contract-addresses) for Monad mainnet:
-
-| Contract | Address |
-| --- | --- |
-| Morpho | [`0xD5D960E8C380B724a48AC59E2DfF1b2CB4a1eAee`](https://monadscan.com/address/0xD5D960E8C380B724a48AC59E2DfF1b2CB4a1eAee#code) |
-| Circle USDC, 6 decimals | [`0x754704Bc059F8C67012fEd69BC8A327a5aafb603`](https://monadscan.com/address/0x754704Bc059F8C67012fEd69BC8A327a5aafb603#code) |
-| AdaptiveCurveIRM | [`0x09475a3D6eA8c314c592b1a3799bDE044E2F400F`](https://monadscan.com/address/0x09475a3D6eA8c314c592b1a3799bDE044E2F400F#code) |
-
-Morpho fixes the loan token, collateral token, oracle address, interest-rate model and liquidation loan-to-value ratio (LLTV) at market creation. A USPC/USDC market uses the network's USPC token as collateral, USDC as the loan asset, and a Morpho-compatible oracle implementing the pricing and validation described above. The selected IRM and LLTV must be enabled on the Morpho deployment. See [market parameters](https://docs.morpho.org/learn/concepts/blue/).
-
-Morpho expects `price()` scaled by `10^(36 + loanDecimals - collateralDecimals)`. With six-decimal USPC and USDC, return the USDC-per-USPC price at **36 decimals**. An 18-decimal answer that already includes the correct denomination and share conversion scales by `10^18`. See the [Morpho oracle interface](https://github.com/morpho-org/morpho-blue/blob/main/src/interfaces/IOracle.sol).
-
-Morpho's standard [`MorphoChainlinkOracleV2` feed library](https://github.com/morpho-org/morpho-blue-oracles/blob/main/src/morpho-chainlink/libraries/ChainlinkDataFeedLib.sol) rejects negative answers but accepts zero and does not enforce freshness. Required checks must therefore exist in the selected adapter or its upstream feed. A stale-price revert can also block price-dependent borrowing, collateral withdrawals and liquidations.
-
-AdaptiveCurveIRM responds to utilization, so borrowing costs and the spread against USPC yield can change. Borrowers should operate below LLTV to leave room for accrued interest and NAV declines. See the [IRM specification](https://docs.morpho.org/developers/contracts/irm/).
-
-## Liquidity and liquidations
-
-A borrower supplies USPC, borrows USDC, then repays debt and interest to withdraw collateral. A liquidator repays USDC and receives USPC. **NAV is not a guaranteed executable sale price.** Converting seized collateral to USDC needs funded buyers or an eligible redemption route.
-
-Liquidation liquidity depends on available cash, execution prices and settlement times. Primary redemption follows its eligibility and liquidity terms. Exits through Ethereum also depend on bridge fees, pauses and delivery times. These factors affect suitable collateral limits and LLTV.
