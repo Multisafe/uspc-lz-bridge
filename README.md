@@ -81,7 +81,7 @@ See [verification details](docs/verification.md) for the scope of these checks.
 | --- | --- |
 | [`evm/`](evm/) | Exact Solidity sources, compiler inputs, reference artifacts, and reproducible build script |
 | [`stellar/`](stellar/) | Pinned Rust sources, deployed OFT/SAC Manager WASM files, and build provenance |
-| [`deployments/`](deployments/) | Mainnet contract identities, code hashes, deployment transactions and dated handoff records |
+| [`deployments/`](deployments/) | Mainnet contract identities, code hashes and deployment transactions |
 | [`docs/`](docs/) | Architecture, integration boundaries, and verification guidance |
 | [`scripts/`](scripts/) | Release checksums and disclosure checks |
 
@@ -90,8 +90,6 @@ The Ethereum vault/NAV system and admin dashboard are outside this bridge releas
 ## Security and administration
 
 Both routes share Ethereum collateral. Administrators can upgrade adapters and change permissions or route settings. Pauses or DVN outages can delay delivery. See [architecture](docs/architecture.md).
-
-The [18 October 2026 handoff record](deployments/handoff-2026-10-18.json) records completed company ownership and role assignments across all three chains, including both EVM ProxyAdmins. At that readback, the retired operators held none of the recorded bridge roles; both EVM fee recipients were the company wallet, application fees were zero, and configured routes allowed 10,000,000 USPC per direction per 86,400 seconds. See the [handoff summary and readback scope](deployments/README.md#administration-handoff).
 
 Report vulnerabilities privately to the repository maintainers, with the affected chain, contract, and a minimal reproduction. Do not include keys or publish unpatched exploit details.
 
