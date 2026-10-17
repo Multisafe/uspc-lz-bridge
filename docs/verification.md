@@ -34,6 +34,12 @@ The [deployment manifest](../deployments/mainnet.json) records contract addresse
 
 Read mutable settings directly from the contracts. The manifest identifies the release and does not track current permissions or route configuration. Stellar reproduction results are documented in the [Stellar README](../stellar/README.md#provenance-and-build-results).
 
+## Handoff readback
+
+The [18 October 2026 handoff record](../deployments/handoff-2026-10-18.json) preserves the authority, fee and rate-limit results from a separate read-only operations verification. All 34 checks passed: 11 Ethereum, 11 Monad and 12 Stellar, covering code identity, contract wiring and agreement with the dated operations baseline. The public record contains the relevant configuration and observation blocks/ledgers; the operations verifier is outside this release.
+
+`pnpm check` verifies this record's release checksum; it does not repeat the on-chain reads. EVM reads were pinned to the recorded blocks. Stellar used latest-state simulations across the recorded ledger range. Monad token role checks cover only the listed accounts because the token does not enumerate role members. Consult the [handoff summary](../deployments/README.md#administration-handoff) for the recorded assignments and read the contracts again for current authority.
+
 ## Updating release checksums
 
 Do not edit preserved contract source, compiler inputs, or reference artifacts to make a new build appear to match. A changed deployment or source version needs a new, explicitly documented baseline and new verification evidence.
